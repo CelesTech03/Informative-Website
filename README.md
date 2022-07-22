@@ -1,4 +1,3 @@
-# Informative-Website
-First website that I have created. An informative travel theme website about the Dominican Republic. Created using strictly HTML and CSS.
+### An informative travel theme website about the Dominican Republic. Created using strictly HTML and CSS.
 
-https://celestech03.github.io/Informative-Website/
+- https://celestech03.github.io/Informative-Website/
