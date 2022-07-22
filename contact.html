@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create two unequal columns that floats next to each other */
+    .column {
+      float: left;
+      padding: 5px;
+      height: 510px;
+      /* Should be removed. Only for demonstration */
+    }
+
+    .left {
+      width: 25%;
+    }
+
+    .right {
+      width: 55%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="navbar">
+    <li class="navbar"><a class="active" href="index.html">Home</a></li>
+    <li class="navbar"><a href="destinations.html">Destinations</a></li>
+    <li class="navbar"><a href="experiences.html">Experiences</a></li>
+    <li class="navbar"><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="header">
+    <h1>Get In Touch</h1>
+  </div>
+
+  <div class="row">
+    <div class="column left" style="background-color:rgb(61, 163, 206);" align="center">
+      <h2 align="center">Contact Us</h2>
+      <br /><br />
+      <b>Address: </b><iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1935330.7949068267!2d-71.25413646128112!3d18.666555489696485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf8838def1b6f5%3A0xa6020f24060df7e0!2sDominican%20Republic!5e0!3m2!1sen!2sus!4v1657499967091!5m2!1sen!2sus"
+        width="50%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe><br /><br />
+      <b>Phone:</b> +1-000-000-000 <br /><br />
+      <b>Email:</b> <a href="mailto:johndoe@example.com">example@abc.com</a><br /><br />
+      <b>Website:</b><a href="https://en.wikipedia.org/wiki/Dominican_Republic">www.DominicanRepublic.com</a></b>
+    </div>
+    <div class="column right" style="background-color:rgb(231, 241, 166);" align="center">
+      <h2>Write Us</h2>
+      <form id="contact" action="mailto:someone@example.com" method="post" enctype="text/plain">
+        <input type="text" placeholder="Full Name" size="50"><br><br>
+        <input type="text" name="mail" placeholder="Email" size="50"><br><br>
+        <input type="text" name="comment" placeholder="tel: XXX XXX XXXX" size="50"><br><br>
+        <textarea id="contact" name="textarea" rows="15" cols="45"
+          placeholder="Your Message Here...Thank you for visiting :)"></textarea><br><br>
+        <button type="submit" class="button-81" onclick="alert('Message sent!')">Send</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
